@@ -1,0 +1,296 @@
+body{
+    margin: 0;
+    padding:0;
+    background-image: url("../images/dynamic-style.png");
+}
+
+/* Header & Nav */
+
+header{
+    width: 100%;
+    background-color: #ffffff;
+    border-style: solid;
+    border-width: 0px 0px 3px 0px;
+    border-color: #cccccc;
+    position: fixed;
+    top: 0;
+}
+
+/* footer{
+    
+    
+    
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+} */
+
+.container1{
+    width: 960px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#brand{
+    float: left;
+    margin-top: -25px;
+}
+
+header a{
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #313030
+}
+
+header li{
+    padding: 0px 10px 0px 10px;
+    margin-top: 10px;
+    float: right;
+    list-style: none;
+}
+
+h1{
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    float: left;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 20px;
+    margin-bottom: -5px;
+}
+
+.portfolio{
+    border-style: solid;
+    border-width: 0px 2px 0px 2px;
+    border-color: #777777;
+}
+
+/* Main Content */
+
+h2{
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    color: #4aaaa5;
+}
+
+hr{
+    color: #777777;
+}
+
+.content{
+    width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    background-color: #ffffff;
+    padding: 20px 28px 20px 28px;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #dddddd;
+}
+
+/* Contact Form */
+
+.form{
+    width: 100%;
+}
+
+.text{
+    height: 200px;
+}
+
+button:hover{
+    background-color: #4aaaa5;
+}
+
+p{
+    color: #777777;
+    line-height: 1.5;
+}
+
+.image{
+    float: left;
+    clear: both;
+}
+
+#me{
+    float: left;
+    margin: 15px 20px 0px 0px
+}
+
+/* Portfolio */
+
+.container2{
+    width: 900px;
+    height: 725px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: #ffffff;
+    padding: 20px 28px 20px 28px;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #dddddd;
+    
+}
+
+article {
+    width: 34.333%;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+
+.image {
+    display: block;
+    width: 258px;
+    height: 175px;
+    margin: 20px 60px 20px 0px;
+}
+.text1 {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    z-index: 1;
+    position: absolute;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    left: 0;
+    right: 50px;
+    bottom: 10px;
+    background-color: #4aaaa5;
+  }
+  article a{
+    text-decoration: none;
+  }
+
+/* Footer */
+
+footer{
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 2;
+}
+
+@media screen and (max-width: 980px) {
+    .container1 {
+        width: 900px;
+    }
+
+    .content{
+        width: 500px;
+        margin-left: 50px;
+    }
+
+    .container2{
+        width: 500px;
+        margin-left: 50px;
+    }
+
+    .image{
+        width: 175px;
+    }
+
+    .text1{
+        right: 75px;
+    }
+
+    article{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container1 {
+        width: 700px;
+    }
+
+    .content{
+        width: 610px;
+        margin-left: 50px;
+    }
+
+    .container2{
+        width: 600px;
+        margin-left: 50px;
+    }
+
+    .image{
+        width: 275px;
+    }
+
+    .text1{
+        right: 25px;
+    }
+
+    article{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container1 {
+        width: 100%;
+        position: static;
+    }
+
+    header{
+        z-index: 3;
+    }
+
+    .content{
+        width: 525px;
+        margin-top: 125px;
+        margin-left: 25px;
+    }
+
+    .container2{
+        width: 475px;
+        margin-top: 125px;
+        margin-left: 50px;
+        z-index: 2;
+        height: 1775px;
+    }
+
+    .image{
+        width: 475px;
+        height: 300px;
+    }
+
+    .text1{
+        position: relative;
+        right: 25px;
+        height: 75px;
+        bottom: 70px;
+        background-color: transparent;
+    }
+
+    article{
+        width: 50%;
+        float: none
+    }
+
+    #brand{
+        width: 100%;
+    }
+
+    h1{
+        float: none;
+        text-align: center;
+    }
+
+    article a{
+        text-decoration: none;
+        background-color: #4aaaa5;
+        left: 125px;
+        position: relative;
+
+    }
+
+}
